@@ -1,6 +1,4 @@
-# Laravel PHP Framework
-
-Laravel Demo Project
+# Laravel Demo Project
 ===
 ##### Clone this project from git and install dependencies:
 ```sh
