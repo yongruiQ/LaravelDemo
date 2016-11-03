@@ -1,5 +1,5 @@
 # Laravel Demo Project
-===
+
 ##### Clone this project from git and install dependencies:
 ```sh
 git clone https://github.com/yongruiQ/LaravelDemo.git
