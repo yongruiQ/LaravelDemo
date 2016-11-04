@@ -2,7 +2,7 @@
 
 ##### Clone this project from git and install dependencies:
 ```sh
-git clone https://github.com/{your-account-please}/LaravelDemo.git
+git clone https://github.com/{your-account-please-after-you-fork-this-repo}/LaravelDemo.git
 cd LaravelDemo
 composer install
 ```
