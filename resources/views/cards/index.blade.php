@@ -15,6 +15,7 @@
       @foreach ($cards as $card)
         <li class="list-group-item list-group-item-info">
           <a href="/cards/{{ $card->id }}">{{$card->title}}</a>
+          <a href="/cards/{{ $card->id }}/delete" class="pull-right">delete</a>
         </li>
       @endforeach
     </ul>
