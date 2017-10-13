@@ -9,7 +9,7 @@ composer install
 
 ##### Prepare the .env file:
 ```sh
-cp .env.example2 .env
+cp .env.example .env
 ```
 
 ##### Set-up database:
