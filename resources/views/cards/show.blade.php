@@ -9,6 +9,11 @@
       <ul class="list-group">
         @foreach ($card->notes as $note)
           <li class="list-group-item">
+            <form action="/notes/{{$note->id}}" method="POST" style="display:inline-block">
+                {{ csrf_field() }}
+                {{ method_field('delete') }}
+                <button type="submit" style="background:transparent;color:brown" class="btn btn-sm">X</button>
+            </form>
             <a href="/notes/{{ $note->id }}/edit">{{ $note->body }}</a>
             <a href="#" class="pull-right" data-toggle="tooltip" title="{{ $note->user->name }}, {{ $note->user->email}}">{{ $note->user->name }}</a>
           </li>
