@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Card;
 use App\Note;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 
 class NotesController extends Controller
 {
@@ -40,6 +41,16 @@ class NotesController extends Controller
     // $note->body = $request->body;
     // $note->save();
     $note->update($request->all());
+    return redirect('/cards/'.$note->card()->first()->id);
+  }
+
+  /**
+   * @param \App\Note $note
+   * @return \Illuminate\Http\RedirectResponse
+   */
+  public function destroy(Note $note): RedirectResponse
+  {
+    $note->delete();
     return redirect('/cards/'.$note->card()->first()->id);
   }
 }
